@@ -316,39 +316,78 @@ nav a:hover::after {
     @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    padding: 20px;
-    gap: 15px;
+    padding: 10px;
   }
 
   nav div {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
 
   .hero h1 {
     font-size: 2.5rem;
+    margin-bottom: 15px;
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .section {
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+
+  .content-block {
+    max-width: 95%;
+    text-align: center;
+  }
+
+  .image-placeholder {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .greeting {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 20px;
   }
 }
 
-    @media (max-width: 480px) {
-      .section {
-        flex-direction: column;
-        align-items: center;
-      }
+@media (max-width: 480px) {
+  nav a {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
 
-      .image-placeholder {
-        width: 100%;
-        height: auto;
-      }
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-      .content-block {
-        max-width: 90%;
-      }
-    }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+
 
     /* Theme Toggle Button */
     .toggle-btn {

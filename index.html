@@ -35,6 +35,32 @@
       box-sizing: border-box;
       scroll-behavior: smooth;
     }
+    nav div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 10px 16px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+  text-align: center;
+  min-width: 100px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
 
     body {
       margin: 0;
@@ -205,6 +231,22 @@ nav a:hover {
 nav a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+nav a {
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 10px 16px;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+  text-align: center;
+  min-width: 100px;
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
 }
 
     /* Hero Image Section */
@@ -388,7 +430,6 @@ nav a:hover::after {
   }
 }
 
-
     /* Theme Toggle Button */
     .toggle-btn {
       background-color: transparent;
@@ -407,6 +448,18 @@ nav a:hover::after {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  nav div {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  nav a {
+    min-width: 90px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
   </style>
 </head>
